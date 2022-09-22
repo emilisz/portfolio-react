@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./App.css";
 // import { Navbar } from "flowbite-react";
 // import component 👇
@@ -16,7 +16,9 @@ function App() {
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
-  const [main,setMain] = useState('Higher legal education, multilingual Developer, Designer with a broad set of skills applicable across different industries. Having a progressive experience in web developing field, can craft and execute successful web project from scratch. Enthusiastic, resilient and flexible achiever with keen attention to details. Looking forward for apportunities to work with people who has the same desire to learn, work and create. ')
+  const [main, setMain] = useState(
+    "Higher legal education, multilingual Developer, Designer with a broad set of skills applicable across different industries. Having a progressive experience in web developing field, can craft and execute successful web project from scratch. Enthusiastic, resilient and flexible achiever with keen attention to details. Looking forward for opportunities to work with people who has the same desire to learn, work and create. "
+  );
 
   return (
     <div className="App max-w-7xl mx-auto lg:px-3">
@@ -28,7 +30,7 @@ function App() {
         </button>
       </div>
 
-      <div className="grid lg:grid-cols-4 gap-1 py-12">
+      <div className="grid lg:grid-cols-4 py-12">
         <div className="main-one hidden lg:block overflow-clip relative">
           <Contacts />
         </div>
@@ -46,17 +48,12 @@ function App() {
               </svg>
             </div>
             <Hero main={main} setMain={setMain} />
-            <div className="py-3 border-y border-slate-500 text-lg font-bold px-2 lg:pl-3 lg:pr-6">
-              Relevant experience
-            </div>
-
-          <Experience/>
-          <Experience/>
-
+            <p className="py-3 border-y border-slate-500 text-lg font-bold px-2 lg:pl-3 lg:pr-6">Relevant experience</p>
+            <Experience />
           </div>
         </div>
         <div className="">
-          <Skills/>
+          <Skills />
         </div>
       </div>
       <Drawer

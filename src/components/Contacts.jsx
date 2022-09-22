@@ -87,6 +87,21 @@ const Contacts = () => {
         </div>
       </div>
 
+      <div className="flex gap-3 py-3 my-3 px-2 rounded-full hover:bg-gray-800">
+       
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+</svg>
+
+
+        <div className="flex flex-col text-left -mt-2 ">
+          <h2 className="font-semibold">Github:</h2>
+          <a className="-mt-1 text-gray-400" href="https://github.com/emilisz" target="_blank" rel="noopener noreferrer">
+            /emilisz
+          </a>
+        </div>
+      </div>
+
       <div className="flex gap-3 py-3 my-3 px-2 rounded-full">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
           <path
