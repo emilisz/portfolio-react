@@ -17,7 +17,7 @@ function App() {
     setIsOpen((prevState) => !prevState);
   };
   const [main, setMain] = useState(
-    "Higher legal education, multilingual Developer, Designer with a broad set of skills applicable across different industries. Having a progressive experience in web developing field, can craft and execute successful web project from scratch. Enthusiastic, resilient and flexible achiever with keen attention to details. Looking forward for opportunities to work with people who has the same desire to learn, work and create. "
+    "I am looking for a job. Not the simple one. The one which gives opportunities to level up my skills and work with interesting team together. I am resilient, enthusiastic, love to code, love challenges. Having a progressive experience in web developing field, I can craft and execute successful web projects from scratch. Looking forward for opportunities to work with people who has the same desire to learn, work and create. "
   );
 
   return (

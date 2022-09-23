@@ -1,4 +1,3 @@
-import { Dropdown } from "flowbite-react";
 import React from "react";
 import HeroButtons from "./partials/HeroButtons";
 
@@ -21,8 +20,8 @@ const Hero = ({ main, setMain }) => {
         </div>
         <div className="text-lg p-1">
           <textarea
-            className="w-full bg-inherit h-auto overflow-hidden border-0 outline-none focus:outline-none cursor-auto"
-            rows="6"
+            className="w-full bg-inherit h-52 md:h-32 lg:h-60 xl:h-48 overflow-hidden border-0 outline-none focus:outline-none cursor-auto"
+            // rows="8"
             onChange={(e) => setMain(e.target.value)}
             value={main}
           />

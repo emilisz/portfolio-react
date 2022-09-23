@@ -86,11 +86,11 @@ const HeroButtons = () => {
         </svg>
       </div>
 
-      <div className="flex flex-row gap-2">
+      <div className="flex flex-row gap-1 lg:gap-2">
         <div className="flex flex-row gap-2  ">
-          <div className="p-3 m-1 rounded-full border-2 border-slate-500 border-r-sky-500 border-b-sky-500 border-l-sky-500 -rotate-45"></div>
-          <div className="border-0 border-l border-slate-500"></div>
-          <div className="m-1 rounded-full border  border-slate-500 hover:bg-sky-900 hover:backdrop-opacity-50 ">
+          <div className="p-3 m-1 rounded-full border-2 border-slate-500 border-r-sky-500 border-b-sky-500 border-l-sky-500 -rotate-45 hidden sm:block"></div>
+          <div className="border-0 border-l border-slate-500 hidden sm:block"></div>
+          <div className="m-1 rounded-full border  border-slate-500 hover:bg-sky-900 hover:backdrop-opacity-50 hidden sm:block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
