@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <>
       <div className="flex flex-col md:flex-row gap-2 py-3 border-t border-slate-500 px-2 lg:pl-3 lg:pr-6 hover:bg-gray-800 hover:bg-blend-darken ">
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-row gap-2 lg:w-20">
         <img className="rounded-full w-16 h-16" src="../img/freelancer.png" alt="" />
         <div className="md:hidden mt-2">
             <div className=" flex flex-row ">
@@ -48,7 +48,7 @@ const Experience = () => {
       </div>
 
       <div className="flex flex-col md:flex-row gap-2 py-3 border-t border-slate-500 px-2 lg:pl-3 lg:pr-6 hover:bg-gray-800 hover:bg-blend-darken ">
-      <div className="flex flex-row gap-2">
+      <div className="flex flex-row gap-2 lg:w-20">
         <img className="rounded-full w-16 h-16" src="../img/commerce.png" alt="" />
         <div className="md:hidden mt-2">
             <div className=" flex flex-row ">
@@ -81,7 +81,7 @@ const Experience = () => {
       </div>
 
       <div className="flex flex-col md:flex-row gap-2 py-3 border-t border-slate-500 px-2 lg:pl-3 lg:pr-6 hover:bg-gray-800 hover:bg-blend-darken ">
-      <div className="flex flex-row gap-2">
+      <div className="flex flex-row gap-2 lg:w-20">
         <img className="rounded-full w-16 h-16" src="../img/muitine.png" alt="" />
         <div className="md:hidden mt-2">
             <div className=" flex flex-row ">
@@ -112,8 +112,8 @@ const Experience = () => {
       </div>
 
       <div className="flex flex-col md:flex-row gap-2 py-3 border-t border-slate-500 px-2 lg:pl-3 lg:pr-6 hover:bg-gray-800 hover:bg-blend-darken ">
-      <div className="flex flex-row gap-2">
-        <img className="rounded-full w-16 h-16" src="../img/bauer.png" alt="" />
+      <div className="flex flex-row gap-2 lg:w-20">
+        <img className="rounded-full w-16 h-16 border" src="../img/bauer.png" alt="" />
         <div className="md:hidden mt-2">
             <div className=" flex flex-row ">
               <h3 className="font-bold">
@@ -123,7 +123,6 @@ const Experience = () => {
             <p className=" text-gray-400">2018 - 2019</p>
           </div>
         </div>
-        {/* <img className="rounded-full w-16 h-16" src="../img/bauer.png" alt="" /> */}
         <div className="flex flex-col  w-full gap-2 mt-3 px-3 lg:mx-3 ">
         <div className="hidden md:block">
             <div className=" flex flex-row ">

@@ -1,6 +1,6 @@
 import React from "react";
 
-const HeroButtons = () => {
+const HeroButtons = ({setShowToast, showToast}) => {
   return (
     <div className="flex flex-row justify-between">
       <div className="flex flex-row">
@@ -102,7 +102,7 @@ const HeroButtons = () => {
             </svg>
           </div>
         </div>
-        <button className="bg-sky-500 px-2 lg:px-4 hover:bg-sky-600 rounded-full shadow font-bold">Tweet</button>
+        <button className="bg-sky-500 px-2 lg:px-4 hover:bg-sky-600 rounded-full shadow font-bold" onClick={()=>setShowToast(!showToast)}>Tweet</button>
       </div>
     </div>
   );

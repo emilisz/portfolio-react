@@ -1,10 +1,14 @@
-import React from "react";
+import React,{useState} from "react";
 import HeroButtons from "./partials/HeroButtons";
 
 const Hero = ({ main, setMain }) => {
+  const [showToast, setShowToast] = useState(false);
+
+  
+  
   return (
     <div className="flex flex-col md:flex-row gap-2 px-2 lg:pl-3 lg:pr-6">
-      <div className=" flex flex-row gap-2">
+      <div className=" flex flex-row gap-2 lg:w-20">
       <img className="rounded-full w-16 h-16" src="../img/profile.jfif" alt="" />
       <div className="text-sky-500 md:hidden h-8 px-3 mx-3 flex w-28 flex-row py-1 rounded-full border border-slate-500 text-sm select-none brightness-75 hover:bg-sky-900 hover:backdrop-opacity-50">
           <span className="font-bold">Everyone</span>
@@ -33,13 +37,8 @@ const Hero = ({ main, setMain }) => {
           </svg>
         </div>
         <div className="text-lg p-1">
-          <textarea
-            className="w-full bg-inherit h-60 md:h-32 lg:h-60 xl:h-48 overflow-hidden border-0 outline-none focus:outline-none cursor-auto"
-            // rows="8"
-            onChange={(e) => setMain(e.target.value)}
-            value={main}
-          />
-          <p className="text-sky-500 text-sm select-none">
+          <p>{main}</p>
+          <p className="text-sky-500 pt-2 text-sm select-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -58,9 +57,35 @@ const Hero = ({ main, setMain }) => {
         </div>
 
         <div className="border-t border-slate-500 p-3">
-         <HeroButtons/>
+         <HeroButtons setShowToast={setShowToast} showToast={showToast} />
         </div>
       </div>
+
+      <div id="toast-notification" className={`${showToast ? "" : "hidden"}   p-4 absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/3 w-full max-w-xs text-gray-900 bg-white rounded-lg shadow dark:bg-gray-800 dark:text-gray-300`} role="alert">
+    <div className="flex items-center mb-3">
+        <span className="mb-1 text-sm font-semibold text-gray-900 dark:text-white">New notification</span>
+        <button type="button" onClick={()=>setShowToast(false)} className="ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700" data-dismiss-target="#toast-notification" aria-label="Close">
+            <span className="sr-only">Close</span>
+            <svg aria-hidden="true" className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+        </button>
+    </div>
+    <div className="flex items-center">
+        <div className="inline-block relative shrink-0">
+            <img className="w-12 h-12 rounded-full" src="../img/profile.jfif" alt="Emilis"/>
+            <span className="inline-flex absolute right-0 bottom-0 justify-center items-center w-6 h-6 bg-blue-600 rounded-full">
+                <svg aria-hidden="true" className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clipRule="evenodd"></path></svg>
+                <span className="sr-only">Message icon</span>
+            </span>
+        </div>
+        <div className="ml-3 text-sm font-normal">
+            <div className="text-sm font-semibold text-gray-900 dark:text-white">Emilis Čiurlionis</div>
+            <div className="text-sm font-normal">Thanks for encouragement! It means a lot for me :)</div> 
+            <span className="text-xs font-medium text-blue-600 dark:text-blue-500">a few seconds ago</span>   
+        </div>
+    </div>
+</div>
+
+
     </div>
   );
 };

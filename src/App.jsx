@@ -10,6 +10,7 @@ import Contacts from "./components/Contacts";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
+import Gallery from "./components/partials/Gallery";
 
 function App() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -50,6 +51,8 @@ function App() {
             <Hero main={main} setMain={setMain} />
             <p className="py-3 border-y border-slate-500 text-lg font-bold px-2 lg:pl-3 lg:pr-6">Relevant experience</p>
             <Experience />
+            <p id="more" className="py-3 border-y border-slate-500 text-lg font-bold px-2 lg:pl-3 lg:pr-6">Projects gallery</p>
+            <Gallery />
           </div>
         </div>
         <div className="">
