@@ -4,23 +4,37 @@ import HeroButtons from "./partials/HeroButtons";
 const Hero = ({ main, setMain }) => {
   return (
     <div className="flex flex-col md:flex-row gap-2 px-2 lg:pl-3 lg:pr-6">
+      <div className=" flex flex-row gap-2">
       <img className="rounded-full w-16 h-16" src="../img/profile.jfif" alt="" />
-      <div className="flex flex-col gap-2 w-full">
-        <div className="text-sky-500 px-3 mx-3 flex w-28 flex-row py-1 rounded-full border border-slate-500 text-sm select-none brightness-75 hover:bg-sky-900 hover:backdrop-opacity-50">
-          <span className="font-bold">Everyone</span>{" "}
+      <div className="text-sky-500 md:hidden h-8 px-3 mx-3 flex w-28 flex-row py-1 rounded-full border border-slate-500 text-sm select-none brightness-75 hover:bg-sky-900 hover:backdrop-opacity-50">
+          <span className="font-bold">Everyone</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-4 h-4 ml-2 pt-1">
+            className="w-4 h-4 ml-2 pt-1 ">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+        </div>
+      </div>
+      <div className="flex flex-col gap-2 w-full">
+        <div className="text-sky-500 hidden md:block px-3 mx-3 flex mt-3 w-28 flex-row py-1 rounded-full border border-slate-500 text-sm select-none brightness-75 hover:bg-sky-900 hover:backdrop-opacity-50">
+          <span className="font-bold">Everyone</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-4 h-4 ml-2 pt-1 -mt-1 inline-block">
             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
           </svg>
         </div>
         <div className="text-lg p-1">
           <textarea
-            className="w-full bg-inherit h-52 md:h-32 lg:h-60 xl:h-48 overflow-hidden border-0 outline-none focus:outline-none cursor-auto"
+            className="w-full bg-inherit h-60 md:h-32 lg:h-60 xl:h-48 overflow-hidden border-0 outline-none focus:outline-none cursor-auto"
             // rows="8"
             onChange={(e) => setMain(e.target.value)}
             value={main}
