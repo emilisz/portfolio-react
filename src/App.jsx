@@ -39,7 +39,7 @@ function App() {
         <div className="lg:col-span-2 lg:border-x lg:border-slate-500 ">
           <div className="flex flex-col text-left">
             <div className="flex justify-between px-2 lg:pl-3 lg:pr-6 my-3">
-              <h5 className="text-lg font-bold">In {main.length} characters..</h5>
+              <p className="text-lg font-bold">In {main.length} characters..</p>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path
                   strokeLinecap="round"

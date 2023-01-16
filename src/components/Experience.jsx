@@ -28,12 +28,12 @@ const Experience = () => {
           <ul className="list-disc px-2 mx-3">
             <li>
               Helped clients by developing websites and implementing SEO best practises to improve and optimize results to their local businesses (
-              <a className="text-sky-500 underline" href="http://nice-taksi.lt">
+              <a className="text-sky-500 underline" href="http://nice-taksi.lt" target="_blank" rel="noopener noreferrer">
                 {" "}
                 nice-taksi.lt
               </a>
               ,
-              <a className="text-sky-500 underline" href="http://nupirksimeauto.lt">
+              <a className="text-sky-500 underline" href="http://nupirksimeauto.lt" target="_blank" rel="noopener noreferrer">
                 {" "}
                 nupirksimeauto.lt
               </a>

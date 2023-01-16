@@ -9,7 +9,7 @@ const Hero = ({ main, setMain }) => {
   return (
     <div className="flex flex-col md:flex-row gap-2 px-2 lg:pl-3 lg:pr-6">
       <div className=" flex flex-row gap-2 lg:w-20">
-      <img className="rounded-full w-16 h-16" src="../img/profile.jfif" alt="" />
+      <img className="rounded-full w-16 h-16" src="../img/profile2.jpg" alt="" />
       <div className="text-sky-500 md:hidden h-8 px-3 mx-3 flex w-28 flex-row py-1 rounded-full border border-slate-500 text-sm select-none brightness-75 hover:bg-sky-900 hover:backdrop-opacity-50">
           <span className="font-bold">Everyone</span>
           <svg
@@ -71,7 +71,7 @@ const Hero = ({ main, setMain }) => {
     </div>
     <div className="flex items-center">
         <div className="inline-block relative shrink-0">
-            <img className="w-12 h-12 rounded-full" src="../img/profile.jfif" alt="Emilis"/>
+            <img className="w-12 h-12 rounded-full" src="../img/profile2.jpg" alt="Emilis"/>
             <span className="inline-flex absolute right-0 bottom-0 justify-center items-center w-6 h-6 bg-blue-600 rounded-full">
                 <svg aria-hidden="true" className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clipRule="evenodd"></path></svg>
                 <span className="sr-only">Message icon</span>
