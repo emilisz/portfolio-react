@@ -31,13 +31,7 @@ const Experience = () => {
               <a className="text-sky-500 underline" href="http://nice-taksi.lt" target="_blank" rel="noopener noreferrer">
                 {" "}
                 nice-taksi.lt
-              </a>
-              ,
-              <a className="text-sky-500 underline" href="http://nupirksimeauto.lt" target="_blank" rel="noopener noreferrer">
-                {" "}
-                nupirksimeauto.lt
-              </a>
-              , )
+              </a>)
             </li>
             <li>Helped clients make IT projects for their studies </li>
             <li>Developed websites by provided figma or photoshop designs</li>

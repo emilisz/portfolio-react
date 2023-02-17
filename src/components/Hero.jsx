@@ -37,7 +37,7 @@ const Hero = ({ main, setMain }) => {
           </svg>
         </div>
         <div className="text-lg p-1">
-          <p>{main}</p>
+          <p contentEditable={true}>{main}</p>
           <p className="text-sky-500 pt-2 text-sm select-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"

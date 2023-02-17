@@ -6,7 +6,7 @@ const Portfolio = () => {
       <p className="py-3 text-left  px-3 border-gray-900 border-b-0 text-lg font-bold">Portfolio:</p>
 
       <div className="hover:bg-gray-700/30 bg-blend-darken">
-        <a href="https://klausk-roboto.vercel.app" className="flex flex-row gap-2 p-3 pb-0 hover:text-sky-500" target="_blank" rel="noopener noreferrer">
+        <a href="https://wisher.website" className="flex flex-row gap-2 p-3 pb-0 hover:text-sky-500" target="_blank" rel="noopener noreferrer">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
             <path
               strokeLinecap="round"
@@ -16,8 +16,8 @@ const Portfolio = () => {
           </svg>
           <p className="font-semibold">klausk.site</p>
         </a>
-        <p className="text-slate-300 ml-3">AI generated search form</p>
-        <p className="text-slate-500 pb-3 ml-3">stack: NextJs, Tailwindcss</p>
+        <p className="text-slate-300 ml-3">Greetings postcards generator</p>
+        <p className="text-slate-500 pb-3 ml-3">stack: NextJs, Tailwindcss, MongoDB</p>
       </div>
 
       <div className="hover:bg-gray-700/30 bg-blend-darken">
