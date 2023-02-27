@@ -14,7 +14,7 @@ const Portfolio = () => {
               d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
             />
           </svg>
-          <p className="font-semibold">klausk.site</p>
+          <p className="font-semibold">wisher.website</p>
         </a>
         <p className="text-slate-300 ml-3">Greetings postcards generator</p>
         <p className="text-slate-500 pb-3 ml-3">stack: NextJs, Tailwindcss, MongoDB</p>

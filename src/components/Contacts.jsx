@@ -64,8 +64,8 @@ const Contacts = () => {
 
         <div className="flex flex-col text-left -mt-2">
           <h2 className="font-semibold">Email:</h2>
-          <a className="-mt-1 text-gray-400" href="mailto:eciurlionis@gmail.com" target="_blank" rel="noopener noreferrer">
-            eciurlionis@gmail.com
+          <a className="-mt-1 text-gray-400" href="mailto:emilis.ciurlionis@gmail.com" target="_blank" rel="noopener noreferrer">
+            emilis.ciurlionis@gmail.com
           </a>
         </div>
       </div>
@@ -124,7 +124,7 @@ const Contacts = () => {
         </div>
       </div>
       
-      <a href="mailto:eciurlionis@gmail.com" target="_blank" rel="noopener noreferrer" className="bg-sky-500 hover:bg-sky-600 font-bold text-lg py-2 px-16 rounded-full mt-6  shadow-lg">Hire me</a>
+      <a href="mailto:emilis.ciurlionis@gmail.com" target="_blank" rel="noopener noreferrer" className="bg-sky-500 hover:bg-sky-600 font-bold text-lg py-2 px-16 rounded-full mt-6  shadow-lg">Hire me</a>
       
     </div>
   );
