@@ -18,7 +18,7 @@ function App() {
     setIsOpen((prevState) => !prevState);
   };
   const [main, setMain] = useState(
-    "I am looking for a job. Not the simple one. The one which gives opportunities to level up my skills and work with interesting team together. I am resilient, enthusiastic, love to code, love challenges. Having a progressive experience in web developing field, I can craft and execute successful web projects from scratch. Looking forward for opportunities to work with people who has the same desire to learn, work and create. "
+    `Hi! My name is Emilis. My niche is web development and digital marketing. Why you should hire me? Because I will do my best and beyond to help you achieve your goals. I'm always looking for challenges which gives opportunities to level up my skills. I am resilient, enthusiastic, love to code, love to help. Having a progressive experience in web developing field, I can craft and execute successful web projects from scratch. Looking forward for opportunities to work with people who has the same desire to learn, work and create. `
   );
 
   return (

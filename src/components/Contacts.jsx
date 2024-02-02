@@ -112,6 +112,16 @@ const Contacts = () => {
         <div className="flex flex-col text-left -mt-2 ">
           <h2 className="font-semibold">Education:</h2>
           <div className="flex flex-col text-gray-400 my-2">
+            <p className="font-semibold">Digital Marketing Course</p>
+            <p>Marketing, Ads, Copywriting</p>
+            <p className="text-sm">2024m. -</p>
+          </div>
+          <div className="flex flex-col text-gray-400 my-2">
+            <p className="font-semibold">KiloHealth Academy</p>
+            <p>PHP, OOP programming</p>
+            <p className="text-sm">2022m.</p>
+          </div>
+          <div className="flex flex-col text-gray-400 my-2">
             <p className="font-semibold">Baltic Talents</p>
             <p>PHP language</p>
             <p className="text-sm">2020m.</p>
