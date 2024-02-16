@@ -32,7 +32,7 @@ function App() {
       </div>
 
       <div className="grid lg:grid-cols-4 py-12">
-        <div className="main-one hidden lg:block overflow-clip relative">
+        <div className="main-one hidden lg:block relative">
           <Contacts />
         </div>
 
@@ -63,11 +63,12 @@ function App() {
         open={isOpen}
         onClose={toggleDrawer}
         direction="left"
-        className="lg:hidden"
+        className="lg:hidden overflow-scroll"
         overlayColor="#000"
         overlayOpacity="0.4"
         size="80vw"
-        style={{ backgroundColor: "#15202b", paddingTop: "15px", paddingLeft: "5px" }}>
+        zIndex="100"
+        style={{ backgroundColor: "#15202b", paddingTop: "15px", paddingLeft: "5px", paddingBottom: "15px", }}>
         <Contacts />
       </Drawer>
     </div>
