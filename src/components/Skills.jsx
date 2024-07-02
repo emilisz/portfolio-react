@@ -13,32 +13,32 @@ const Skills = () => {
         <p className="py-3 text-left ml-3  border-gray-900 border-b-0 text-lg font-bold">Proficient with:</p>
         
         <div className="grid grid-cols-3 lg:ml-3 border border-gray-900 rounded-t-3xl divide-x divide-gray-900 bg-gray-800 bg-blend-darken">
-          <div className="p-6 lg:p-3 w-full hover:bg-gray-700 rounded-tl-3xl flex items-center align-center" title="HTML">
+          <div className="p-6 lg:p-3 w-full hover:bg-gray-700 rounded-tl-3xl flex items-center align-center group" title="HTML">
             {/* <img className="bg-cover bg-center w-full" src="../img/html.png" alt="" /> */}
-            <FaHtml5 className="w-12 h-12 mx-auto" />
+            <FaHtml5 className="w-12 h-12 mx-auto group-hover:text-sky-500" />
             
           </div>
-          <div className="p-6 lg:p-3 w-full hover:bg-gray-700 flex items-center align-center" title="Laravel">
+          <div className="p-6 lg:p-3 w-full hover:bg-gray-700 flex items-center align-center group" title="Laravel">
             {/* <img className="bg-cover bg-center w-full" src="../img/laravel.png" alt="" /> */}
-            <FaLaravel className="w-12 h-12 mx-auto" />
+            <FaLaravel className="w-12 h-12 mx-auto group-hover:text-sky-500" />
           </div>
-          <div className="p-6 lg:p-3 w-full hover:bg-gray-700 flex items-center align-center rounded-tr-3xl" title="Tailwindcss">
+          <div className="p-6 lg:p-3 w-full hover:bg-gray-700 flex items-center align-center group rounded-tr-3xl" title="Tailwindcss">
             {/* <img className="bg-cover bg-center w-full" src="../img/tailwind.png" alt="" /> */}
-            <RiTailwindCssFill className="w-12 h-12 mx-auto" />
+            <RiTailwindCssFill className="w-12 h-12 mx-auto group-hover:text-sky-500" />
           </div>
         </div>
         <div className="grid grid-cols-3 lg:ml-3 border border-gray-900 border-t-0 rounded-b-3xl divide-x divide-gray-900 bg-gray-800 bg-blend-darken">
-          <div className="p-6 lg:p-3 w-full hover:bg-gray-700 rounded-bl-3xl flex items-center align-center" title="React">
+          <div className="p-6 lg:p-3 w-full hover:bg-gray-700 rounded-bl-3xl flex items-center align-center group" title="React">
             {/* <img className="bg-cover bg-center w-full" src="../img/react.png" alt="" /> */}
-            <FaReact className="w-12 h-12 mx-auto" />
+            <FaReact className="w-12 h-12 mx-auto group-hover:text-sky-500" />
           </div>
-          <div className="p-6 lg:p-3 w-full hover:bg-gray-700" title="Mysql">
+          <div className="p-6 lg:p-3 w-full hover:bg-gray-700 group" title="Mysql">
             {/* <img className="bg-cover bg-center w-full" src="../img/mysql.png" alt="" /> */}
-            <DiMysql className="w-12 h-12 mx-auto" />
+            <DiMysql className="w-12 h-12 mx-auto group-hover:text-sky-500" />
           </div>
-          <div className="p-6 lg:p-3 w-full hover:bg-gray-700 rounded-br-3xl flex items-center align-center" title="Bootstrap">
+          <div className="p-6 lg:p-3 w-full hover:bg-gray-700 rounded-br-3xl flex items-center align-center group" title="Bootstrap">
             {/* <img className="bg-cover bg-center w-full" src="../img/bootstrap.png" alt="" /> */}
-            <FaBootstrap className="w-12 h-12 mx-auto" />
+            <FaBootstrap className="w-12 h-12 mx-auto group-hover:text-sky-500" />
           </div>
         </div>
 

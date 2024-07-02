@@ -62,7 +62,7 @@ const Portfolio = () => {
           return null;
         }
         return (
-          <div className="hover:bg-gray-700/30 bg-blend-darken">
+          <div key={index} className="hover:bg-gray-700/30 bg-blend-darken">
             <a href={project.url} className="flex flex-row gap-2 p-3 pb-0 hover:text-sky-500" target="_blank" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-sky-500">
                 <path
