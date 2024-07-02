@@ -1,5 +1,5 @@
 import { Carousel } from "flowbite-react";
-import React, { useState } from "react";
+import React from "react";
 import ExperienceButtons from "./ExperienceButtons";
 
 const Gallery = () => {

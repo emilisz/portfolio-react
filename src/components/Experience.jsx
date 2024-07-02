@@ -4,6 +4,44 @@ import ExperienceButtons from "./partials/ExperienceButtons";
 const Experience = () => {
   return (
     <>
+
+<div className="flex flex-col md:flex-row gap-2 py-3 border-t border-slate-500 px-2 lg:pl-3 lg:pr-6 hover:bg-gray-800 hover:bg-blend-darken ">
+        <div className="flex flex-row gap-2 lg:w-20">
+        <img className="rounded-full w-16 h-16" src="../img/freelancer.png" alt="" />
+        <div className="md:hidden mt-2">
+            <div className=" flex flex-row ">
+              <h3 className="font-bold">
+                Web developer <span className="font-light">@ freelancer</span>
+              </h3>
+            </div>
+            <p className=" text-gray-400">2020 -</p>
+          </div>
+        </div>
+        <div className="flex flex-col  w-full gap-2 mt-3 px-3 lg:mx-3 ">
+          <div className="hidden md:block">
+            <div className=" flex flex-row ">
+              <h3 className="font-bold">
+                Web developer <span className="font-light">@ freelancer</span>
+              </h3>
+            </div>
+            <p className=" text-gray-400">2020 -</p>
+          </div>
+          <ul className="list-disc px-2 mx-3">
+            <li>
+              Helped clients by developing websites, optimizing ads and implementing SEO best practises to improve and optimize results to their local businesses (
+              <a className="text-sky-500 underline" href="http://nice-taksi.lt" target="_blank" rel="noopener noreferrer">
+                {" "}
+                nice-taksi.lt
+              </a>)
+            </li>
+            <li>Helped clients make IT projects for their studies </li>
+            <li>Developed websites by provided figma or photoshop designs</li>
+          </ul>
+
+          <ExperienceButtons />
+        </div>
+      </div>
+
       <div className="flex flex-col md:flex-row gap-2 py-3 border-t border-slate-500 px-2 lg:pl-3 lg:pr-6 hover:bg-gray-800 hover:bg-blend-darken ">
         <div className="flex flex-row gap-2 lg:w-20">
         <img className="rounded-full w-16 h-16" src="../img/freelancer.png" alt="" />
@@ -43,42 +81,7 @@ const Experience = () => {
       </div>
 
 
-      <div className="flex flex-col md:flex-row gap-2 py-3 border-t border-slate-500 px-2 lg:pl-3 lg:pr-6 hover:bg-gray-800 hover:bg-blend-darken ">
-        <div className="flex flex-row gap-2 lg:w-20">
-        <img className="rounded-full w-16 h-16" src="../img/freelancer.png" alt="" />
-        <div className="md:hidden mt-2">
-            <div className=" flex flex-row ">
-              <h3 className="font-bold">
-                Web developer <span className="font-light">@ freelancer</span>
-              </h3>
-            </div>
-            <p className=" text-gray-400">2020 -</p>
-          </div>
-        </div>
-        <div className="flex flex-col  w-full gap-2 mt-3 px-3 lg:mx-3 ">
-          <div className="hidden md:block">
-            <div className=" flex flex-row ">
-              <h3 className="font-bold">
-                Web developer <span className="font-light">@ freelancer</span>
-              </h3>
-            </div>
-            <p className=" text-gray-400">2020 -</p>
-          </div>
-          <ul className="list-disc px-2 mx-3">
-            <li>
-              Helped clients by developing websites, optimizing ads and implementing SEO best practises to improve and optimize results to their local businesses (
-              <a className="text-sky-500 underline" href="http://nice-taksi.lt" target="_blank" rel="noopener noreferrer">
-                {" "}
-                nice-taksi.lt
-              </a>)
-            </li>
-            <li>Helped clients make IT projects for their studies </li>
-            <li>Developed websites by provided figma or photoshop designs</li>
-          </ul>
-
-          <ExperienceButtons />
-        </div>
-      </div>
+      
 
       <div className="flex flex-col md:flex-row gap-2 py-3 border-t border-slate-500 px-2 lg:pl-3 lg:pr-6 hover:bg-gray-800 hover:bg-blend-darken ">
       <div className="flex flex-row gap-2 lg:w-20">

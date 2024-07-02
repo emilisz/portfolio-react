@@ -3,310 +3,89 @@ import React, { useState } from "react";
 const Portfolio = () => {
   const [showMore, setShowMore] = useState(false);
 
+  const projects = [
+    {
+      title: "Jobs Remote Spot (ongoing)",
+      url: "https://jobsremotespot.com/",
+      description: "Job listing website",
+      stack: "Laravel, InertiaJs, Mysql, DaisyUI",
+    },
+    { title: "Woodenworks", url: "https://woodenworks.lt", description: "E-commerce shop for wood products", stack: "Wordpress, Elementor, CSS" },
+    { title: "Taksinumeris", url: "https://taksinumeris.lt", description: "Taxi companies listing site", stack: "Next.js, Tailwindcss" },
+    {
+      title: "Tour generator",
+      url: "https://worthtovisit.vercel.app",
+      description: "Generate city tour with AI",
+      stack: "NextJs, DaisyUI, OpenAI",
+    },
+    {
+      title: "Wisher",
+      url: "https://wisher-emilisz.vercel.app",
+      description: "Greetings postcards generator",
+      stack: "NextJs, Tailwindcss, MongoDB",
+    },
+    {
+      title: "Truth or dare generator",
+      url: "https://play.google.com/store/apps/details?id=com.emiliszzz.truth_or_dare_app",
+      description: "Android game",
+      stack: "React native",
+    },
+    { title: "Nice taksi", url: "https://nice-taksi.lt", description: "Website for taxi services", stack: "Wordpress, Elementor, CSS" },
+    {
+      title: "Wedding invitations",
+      url: "https://wedding-invitation-template.vercel.app?id=145222",
+      description: "Individual invitations for every event guest by ids",
+      stack: "React, Tailwindcss",
+    },
+    {
+      title: "Solo pica",
+      url: "https://solo-pica.vercel.app",
+      description: "Website for ordering food. Connected with Stripe payment provider",
+      stack: "React, Tailwindcss",
+    },
+    { title: "Weather forecast", url: "https://weather-react-eight.vercel.app", description: "Weather info", stack: "React" },
+    {
+      title: "World countries",
+      url: "https://countries-api-ten-eta.vercel.app",
+      description: "Countries ordering, listing, sorting (api)",
+      stack: "React",
+    },
+    { title: "Crush coffee", url: "https://crush-coffee.vercel.app", description: "Web shop for coffee lovers", stack: "React" },
+  ];
+
   return (
     <div className="bg-gray-800 lg:ml-6 pb-5  rounded-3xl  text-left">
-      <p className="py-3 text-left  px-3 border-gray-900 border-b-0 text-lg font-bold">
-        Portfolio:
-      </p>
+      <p className="py-3 text-left  px-3 border-gray-900 border-b-0 text-lg font-bold">Portfolio:</p>
 
-      <div className="hover:bg-gray-700/30 bg-blend-darken">
-        <a
-          href="https://taksinumeris.lt"
-          className="flex flex-row gap-2 p-3 pb-0 hover:text-sky-500"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
-            />
-          </svg>
-          <p className="font-semibold">taksinumeris.lt</p>
-        </a>
-        <p className="text-slate-300 ml-3">Taxi campanies listing site</p>
-        <p className="text-slate-500 pb-3 ml-3">stack: Next.js, Tailwindcss</p>
-      </div>
+      {projects.map((project, index) => {
+        if (index > 7 && !showMore) {
+          return null;
+        }
+        return (
+          <div className="hover:bg-gray-700/30 bg-blend-darken">
+            <a href={project.url} className="flex flex-row gap-2 p-3 pb-0 hover:text-sky-500" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-sky-500">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+                />
+              </svg>
+              <p className="font-semibold decoration-sky-500 underline">{project.title}</p>
+            </a>
+            <p className="text-slate-300 ml-3">{project.description}</p>
+            <p className="text-slate-500 pb-3 ml-3">stack: {project.stack}</p>
+          </div>
+        );
+      })}
 
-     
-
-      <div className="hover:bg-gray-700/30 bg-blend-darken">
-        <a
-          href="https://wisher.website"
-          className="flex flex-row gap-2 p-3 pb-0 hover:text-sky-500"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
-            />
-          </svg>
-          <p className="font-semibold">wisher.website (ongoing)</p>
-        </a>
-        <p className="text-slate-300 ml-3">Greetings postcards generator</p>
-        <p className="text-slate-500 pb-3 ml-3">
-          stack: NextJs, Tailwindcss, MongoDB
-        </p>
-      </div>
-
-      <div className="hover:bg-gray-700/30 bg-blend-darken">
-        <a
-          href="https://play.google.com/store/apps/details?id=com.emiliszzz.truth_or_dare_app"
-          className="flex flex-row gap-2 p-3 pb-0 hover:text-sky-500"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
-            />
-          </svg>
-          <p className="font-semibold">Truth or dare generator</p>
-        </a>
-        <p className="text-slate-300 ml-3">Android game</p>
-        <p className="text-slate-500 pb-3 ml-3">stack: React native</p>
-      </div>
-
-      <div className="hover:bg-gray-700/30 bg-blend-darken">
-        <a
-          href="https://nice-taksi.lt"
-          className="flex flex-row gap-2 p-3 pb-0 hover:text-sky-500"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
-            />
-          </svg>
-          <p className="font-semibold">nice-taksi</p>
-        </a>
-        <p className="text-slate-300 ml-3">Landing page for taxi services</p>
-        <p className="text-slate-500 pb-3 ml-3">
-          stack: Wordpress, Elementor, CSS
-        </p>
-      </div>
-
-      <div className="hover:bg-gray-700/30 bg-blend-darken">
-        <a
-          href="https://wedding-invitation-template.vercel.app?id=145222"
-          className="flex flex-row gap-2 p-3 pb-0 hover:text-sky-500"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
-            />
-          </svg>
-          <p className="font-semibold">Wedding invitations</p>
-        </a>
-        <p className="text-slate-300 ml-3">
-          Individual invitations for every event guest by ids
-        </p>
-        <p className="text-slate-500 pb-3 ml-3">stack: React, Tailwindcss</p>
-      </div>
-
-      <div className="hover:bg-gray-700/30 bg-blend-darken">
-        <a
-          href="https://solo-pica.vercel.app"
-          className="flex flex-row gap-2 p-3 pb-0 hover:text-sky-500"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
-            />
-          </svg>
-          <p className="font-semibold">Pizzeria website</p>
-        </a>
-        <p className="text-slate-300 ml-3">
-          Website for ordering food. Connected with Stripe payment provider
-        </p>
-        <p className="text-slate-500 pb-3 ml-3">stack: React, Tailwindcss</p>
-      </div>
-
-      <div className="hover:bg-gray-700/30 bg-blend-darken">
-        <a
-          href="https://countries-api-ten-eta.vercel.app"
-          className="flex flex-row gap-2 p-3 pb-0 hover:text-sky-500"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
-            />
-          </svg>
-          <p className="font-semibold">Countries</p>
-        </a>
-        <p className="text-slate-300 ml-3">
-          Countries ordering, listing, sorting (api)
-        </p>
-        <p className="text-slate-500 pb-3 ml-3">stack: React</p>
-      </div>
-
-      <div className="hover:bg-gray-700/30 bg-blend-darken">
-        <a
-          href="https://weather-react-eight.vercel.app"
-          className="flex flex-row gap-2 p-3 pb-0 hover:text-sky-500"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
-            />
-          </svg>
-          <p className="font-semibold">Weather forecast</p>
-        </a>
-        <p className="text-slate-300 ml-3">Weather info</p>
-        <p className="text-slate-500 pb-3 ml-3">stack: React</p>
-      </div>
-
-      
-
-      {showMore ? (
-
-<>
-<div className="hover:bg-gray-700/30 bg-blend-darken">
-<a
-  href="https://decoartposter.com"
-  className="flex flex-row gap-2 p-3 pb-0 hover:text-sky-500"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={1.5}
-    stroke="currentColor"
-    className="w-6 h-6"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
-    />
-  </svg>
-  <p className="font-semibold">decoartposter.com (ongoing)</p>
-</a>
-<p className="text-slate-300 ml-3">Canvas art shop</p>
-<p className="text-slate-500 pb-3 ml-3">stack: Wordpress</p>
-</div>
-
-        <div className="hover:bg-gray-700/30 bg-blend-darken">
-          <a
-            href="https://crush-coffee.vercel.app"
-            className="flex flex-row gap-2 p-3 pb-0 hover:text-sky-500"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
-              />
-            </svg>
-            <p className="font-semibold">Crush coffee</p>
-          </a>
-          <p className="text-slate-300 ml-3">Web shop for coffee lovers</p>
-          <p className="text-slate-500 pb-3 ml-3">stack: React</p>
-        </div>
-</>
-      ) : (
+      {!showMore ? (
         <button className="text-sky-500 p-3" onClick={() => setShowMore(!showMore)}>
-        Show more
-      </button>
-      )}
-
-      
+          Show more
+        </button>
+      ) : null}
     </div>
   );
 };
-
-
 
 export default Portfolio;
