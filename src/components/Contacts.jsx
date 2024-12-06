@@ -131,9 +131,14 @@ const Contacts = () => {
         <div className="flex flex-col text-left -mt-2 ">
           <h2 className="font-semibold">Education:</h2>
           <div className="flex flex-col text-gray-400 my-2">
+            <p className="font-semibold">Mykolo Romerio university</p>
+            <p>Technology of Information Systems and Cyber Security</p>
+            <p className="text-sm">2024m. -</p>
+          </div>
+          <div className="flex flex-col text-gray-400 my-2">
             <p className="font-semibold">Digital Marketing Course</p>
             <p>Marketing, Ads, Copywriting</p>
-            <p className="text-sm">2024m. -</p>
+            <p className="text-sm">2024m.</p>
           </div>
           <div className="flex flex-col text-gray-400 my-2">
             <p className="font-semibold">KiloHealth Academy</p>
@@ -146,8 +151,8 @@ const Contacts = () => {
             <p className="text-sm">2020m.</p>
           </div>
           <div className="flex flex-col text-gray-400 my-2">
-            <p className="font-semibold">Mykolo Romerio universitetas</p>
-            <p>Teisės studijos</p>
+            <p className="font-semibold">Mykolo Romerio university</p>
+            <p>Law studies</p>
             <p className="text-sm">2012-2016m.</p>
           </div>
         </div>

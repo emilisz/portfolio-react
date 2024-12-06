@@ -17,7 +17,7 @@ const Search = () => {
       </span>
       <input
         className="text-lg rounded-full bg-gray-800 bg-blend-darken placeholder:text-slate-500 block  w-full  py-2 pl-16 pr-3 focus:outline-none"
-        placeholder="Search Twitter"
+        placeholder="Search"
         type="text"
         name="search"
       />
