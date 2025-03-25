@@ -11,7 +11,7 @@ const Gallery = () => {
           <img className="rounded-full w-16 h-16 grayscale group-hover:grayscale-0" src="../img/freelancer.png" alt="" />
           <div className="md:hidden mt-2">
             <div className=" flex flex-row ">
-              <h3 className="font-bold">Coded web design</h3>
+              <h3 className="font-bold">Projects</h3>
             </div>
             <p className=" text-gray-400"></p>
           </div>
@@ -19,17 +19,22 @@ const Gallery = () => {
         <div className="flex flex-col  w-full gap-2 mt-3 px-3 lg:mx-3 ">
           <div className="hidden md:block">
             <div className=" flex flex-row ">
-              <h3 className="font-bold">Coded web design</h3>
+              <h3 className="font-bold">Projects</h3>
             </div>
             <p className=" text-gray-400"></p>
           </div>
 
           <div className="h-56 sm:h-96 xl:h-96 2xl:h-96">
-            <Carousel slideInterval={5000} pauseOnHover>
+            <Carousel slideInterval={4000} pauseOnHover>
+              <img src="../img/other8.webp" alt="..." />
+              <img src="../img/other6.webp" alt="..." />
+              <img src="../img/other7.webp" alt="..." />
               <img src="../img/other1.webp" alt="..." />
               <img src="../img/other2.webp" alt="..." />
               <img src="../img/other3.webp" alt="..." />
               <img src="../img/other4.webp" alt="..." />
+              <img src="../img/other5.webp" alt="..." />
+             
             </Carousel>
           </div>
           <ExperienceButtons />
