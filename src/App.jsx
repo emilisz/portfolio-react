@@ -18,7 +18,7 @@ function App() {
     setIsOpen((prevState) => !prevState);
   };
   const [main, setMain] = useState(
-    `Hi! My name is Emilis. My niche is web development and digital marketing. Why you should hire me? Because I will do my best and beyond to help and convert your ideas to code. I'm always looking for challenges which gives opportunities to level up my skills. I am resilient, enthusiastic, love to code, love to help. Having a progressive experience in web developing field, I can craft and execute successful web projects from scratch. Looking forward for opportunities to work with people who has the same desire to learn, work and create. `
+    `Hi, I’m Emilis — a web developer 👨‍💻 with a strong focus on digital marketing 📈 and SEO 🔍. I turn ideas 💡 into high-performing, search-optimized websites 🌐 that deliver real results. Passionate about clean code 🧼, user experience 🎯, and visibility 📊, I’m always looking for challenges that help me grow 🚀. With proven experience in web development and SEO, I can plan, build, and optimize full-scale web projects from scratch 🛠️. I’m eager to collaborate with like-minded individuals who value learning 📚, creativity 🎨, and performance ⚡. `
   );
 
   return (

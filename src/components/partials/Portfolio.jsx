@@ -5,10 +5,10 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: "Jobs Remote Spot (ongoing)",
-      url: "https://jobsremotespot.com/",
-      description: "Job listing website",
-      stack: "Laravel, InertiaJs, Mysql, DaisyUI",
+      title: "InvoicePing (ongoing)",
+      url: "https://www.invoiceping.com/",
+      description: "Invoicing App",
+      stack: "Laravel, Filament, Mysql, TailwindCSS",
     },
     { title: "Statybos Tonas", url: "https://statybostonas.lt", description: "E-commerce shop for local business", stack: "Wordpress, Elementor, CSS" },
     { title: "Woodenworks", url: "https://woodenworks.lt", description: "E-commerce shop for wood products", stack: "Wordpress, Elementor, CSS" },
