@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Search = () => {
+const Search = ({ translations, language }) => {
   return (
     <label className="relative hidden lg:block  m-3 ">
-      <span className="sr-only">Search</span>
+      <span className="sr-only">{translations[language].searchLabel}</span>
       <span className="absolute inset-y-0 left-3 flex items-center pl-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@ const Search = () => {
       </span>
       <input
         className="text-lg rounded-full bg-gray-800 bg-blend-darken placeholder:text-slate-500 block  w-full  py-2 pl-16 pr-3 focus:outline-none"
-        placeholder="Search"
+        placeholder={translations[language].searchPlaceholder}
         type="text"
         name="search"
       />

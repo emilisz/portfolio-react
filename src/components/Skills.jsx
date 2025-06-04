@@ -8,12 +8,12 @@ import { DiMysql } from "react-icons/di";
 import { PiFileCssLight } from "react-icons/pi";
 import { FaPhp } from "react-icons/fa";
 
-const Skills = () => {
+const Skills = ({ translations, language }) => {
   return (
     <div>
-      <Search />
+      <Search translations={translations} language={language} />
       <div className="my-3 py-6 px-3 border-y border-slate-500 mt-6">
-        <p className="py-3 text-left ml-3  border-gray-900 border-b-0 text-lg font-bold">Proficient with:</p>
+        <p className="py-3 text-left ml-3  border-gray-900 border-b-0 text-lg font-bold">{translations[language].proficientWith}</p>
         
         <div className="grid grid-cols-3 lg:ml-3 border border-gray-900 rounded-t-3xl divide-x divide-gray-900 bg-gray-800 bg-blend-darken">
           <div className="p-6 lg:p-3 w-full hover:bg-gray-700 rounded-tl-3xl flex items-center align-center group" title="HTML">
@@ -65,9 +65,14 @@ const Skills = () => {
 
       </div>
 
-      <Portfolio />
+      <Portfolio translations={translations} language={language} />
     </div>
   );
+};
+
+Skills.defaultProps = {
+  translations: { en: {}, lt: {} },
+  language: 'en',
 };
 
 export default Skills;

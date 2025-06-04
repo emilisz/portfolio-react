@@ -2,7 +2,7 @@ import { Carousel } from "flowbite-react";
 import React from "react";
 import ExperienceButtons from "./ExperienceButtons";
 
-const Gallery = () => {
+const Gallery = ({ translations, language }) => {
 
   return (
     <>
@@ -11,7 +11,7 @@ const Gallery = () => {
           <img className="rounded-full w-16 h-16 grayscale group-hover:grayscale-0" src="../img/freelancer.png" alt="" />
           <div className="md:hidden mt-2">
             <div className=" flex flex-row ">
-              <h3 className="font-bold">Projects</h3>
+              <h3 className="font-bold">{translations[language].projectsLabel}</h3>
             </div>
             <p className=" text-gray-400"></p>
           </div>
@@ -19,7 +19,7 @@ const Gallery = () => {
         <div className="flex flex-col  w-full gap-2 mt-3 px-3 lg:mx-3 ">
           <div className="hidden md:block">
             <div className=" flex flex-row ">
-              <h3 className="font-bold">Projects</h3>
+              <h3 className="font-bold">{translations[language].projectsLabel}</h3>
             </div>
             <p className=" text-gray-400"></p>
           </div>

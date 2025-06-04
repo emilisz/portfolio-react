@@ -1,62 +1,13 @@
 import React, { useState } from "react";
 
-const Portfolio = () => {
+const Portfolio = ({ translations, language }) => {
   const [showMore, setShowMore] = useState(false);
 
-  const projects = [
-    {
-      title: "InvoicePing (ongoing)",
-      url: "https://www.invoiceping.com/",
-      description: "Invoicing App",
-      stack: "Laravel, Filament, Mysql, TailwindCSS",
-    },
-    { title: "Statybos Tonas", url: "https://statybostonas.lt", description: "E-commerce shop for local business", stack: "Wordpress, Elementor, CSS" },
-    { title: "Woodenworks", url: "https://woodenworks.lt", description: "E-commerce shop for wood products", stack: "Wordpress, Elementor, CSS" },
-    { title: "Taksinumeris", url: "https://taksinumeris.lt", description: "Taxi companies listing site", stack: "Next.js, Tailwindcss" },
-    {
-      title: "Tour generator",
-      url: "https://worthtovisit.vercel.app",
-      description: "Generate city tour with AI",
-      stack: "NextJs, DaisyUI, OpenAI",
-    },
-    {
-      title: "Wisher",
-      url: "https://wisher-emilisz.vercel.app",
-      description: "Greetings postcards generator",
-      stack: "NextJs, Tailwindcss, MongoDB",
-    },
-    {
-      title: "Truth or dare generator",
-      url: "https://play.google.com/store/apps/details?id=com.emiliszzz.truth_or_dare_app",
-      description: "Android game",
-      stack: "React native",
-    },
-    { title: "Nice taksi", url: "https://nice-taksi.lt", description: "Website for taxi services", stack: "Wordpress, Elementor, CSS" },
-    {
-      title: "Wedding invitations",
-      url: "https://wedding-invitation-template.vercel.app?id=145222",
-      description: "Individual invitations for every event guest by ids",
-      stack: "React, Tailwindcss",
-    },
-    {
-      title: "Solo pica",
-      url: "https://solo-pica.vercel.app",
-      description: "Website for ordering food. Connected with Stripe payment provider",
-      stack: "React, Tailwindcss",
-    },
-    { title: "Weather forecast", url: "https://weather-react-eight.vercel.app", description: "Weather info", stack: "React" },
-    {
-      title: "World countries",
-      url: "https://countries-api-ten-eta.vercel.app",
-      description: "Countries ordering, listing, sorting (api)",
-      stack: "React",
-    },
-    { title: "Crush coffee", url: "https://crush-coffee.vercel.app", description: "Web shop for coffee lovers", stack: "React" },
-  ];
+  const projects = translations[language].projects;
 
   return (
     <div className="bg-gray-800 lg:ml-6 pb-5  rounded-3xl  text-left">
-      <p className="py-3 text-left  px-3 border-gray-900 border-b-0 text-lg font-bold">Portfolio:</p>
+      <p className="py-3 text-left  px-3 border-gray-900 border-b-0 text-lg font-bold">{translations[language].portfolioTitle}</p>
 
       {projects.map((project, index) => {
         if (index > 7 && !showMore) {
@@ -75,18 +26,23 @@ const Portfolio = () => {
               <p className="font-semibold decoration-sky-500 underline">{project.title}</p>
             </a>
             <p className="text-slate-300 ml-3">{project.description}</p>
-            <p className="text-slate-500 pb-3 ml-3">stack: {project.stack}</p>
+            <p className="text-slate-500 pb-3 ml-3">{translations[language].stackLabel}: {project.stack}</p>
           </div>
         );
       })}
 
       {!showMore ? (
         <button className="text-sky-500 p-3" onClick={() => setShowMore(!showMore)}>
-          Show more
+          {translations[language].showMore}
         </button>
       ) : null}
     </div>
   );
+};
+
+Portfolio.defaultProps = {
+  translations: { en: {}, lt: {} },
+  language: 'en',
 };
 
 export default Portfolio;
