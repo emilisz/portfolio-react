@@ -32,7 +32,7 @@ const Contacts = ({ translations, language }) => {
 
         <div className="flex flex-col text-left -mt-2">
           <h2 className="font-semibold">{translations[language].locationLabel}</h2>
-          <p className="-mt-1 text-gray-400">Kazlų Rūda</p>
+          <p className="-mt-1 text-gray-400">Kazlų Rūda, Kaunas</p>
         </div>
       </div>
 
