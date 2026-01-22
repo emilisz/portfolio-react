@@ -39,7 +39,7 @@ const translations = {
         period: '2025 -',
         responsibilities: [
           'Laravel, WP, Blade, SCSS, PHP',
-          'Developing & managing Wordpress, laravel websites',
+          'Developing & managing Wordpress, Laravel websites',
           'Client support',
         ],
       },
