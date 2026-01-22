@@ -6,7 +6,9 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandInertia } from "react-icons/tb";
 import { DiMysql } from "react-icons/di";
 import { PiFileCssLight } from "react-icons/pi";
-import { FaPhp } from "react-icons/fa";
+import { FaJs, FaPhp } from "react-icons/fa";
+import { FaWordpress } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
 
 const Skills = ({ translations, language }) => {
   return (
@@ -59,6 +61,21 @@ const Skills = ({ translations, language }) => {
           <div className="p-6 lg:p-3 w-full hover:bg-gray-700 rounded-br-3xl flex items-center align-center group" title="Bootstrap">
             {/* <img className="bg-cover bg-center w-full" src="../img/bootstrap.png" alt="" /> */}
             <FaBootstrap className="w-12 h-12 mx-auto group-hover:text-sky-500" />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-3 lg:ml-3 border border-gray-900 border-t-0 rounded-b-3xl divide-x divide-gray-900 bg-gray-800 bg-blend-darken">
+          <div className="p-6 lg:p-3 w-full hover:bg-gray-700 rounded-bl-3xl flex items-center align-center group" title="JavaScript">
+            {/* <img className="bg-cover bg-center w-full" src="../img/react.png" alt="" /> */}
+            <FaJs className="w-12 h-12 mx-auto group-hover:text-sky-500" />
+          </div>
+          <div className="p-6 lg:p-3 w-full hover:bg-gray-700 group" title="Wordpress">
+            {/* <img className="bg-cover bg-center w-full" src="../img/mysql.png" alt="" /> */}
+            <FaWordpress className="w-12 h-12 mx-auto group-hover:text-sky-500" />
+          </div>
+          <div className="p-6 lg:p-3 w-full hover:bg-gray-700 rounded-br-3xl flex items-center align-center group" title="Github">
+            {/* <img className="bg-cover bg-center w-full" src="../img/bootstrap.png" alt="" /> */}
+            <FaGithub className="w-12 h-12 mx-auto group-hover:text-sky-500" />
           </div>
         </div>
 

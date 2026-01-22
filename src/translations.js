@@ -20,10 +20,20 @@ const translations = {
     githubLabel: 'Github:',
     websiteLabel: 'Website:',
     educationLabel: 'Education:',
-    hireMe: 'Hire me',
+    hireMe: 'Write email',
     jobs: [
       {
-        img: '../img/freelancer.png',
+        img: '../img/lauksva.jpg',
+        title: 'Developer',
+        company: 'Lauksva',
+        period: '2025 -',
+        responsibilities: [
+          'Laravel, PHP',
+          'Business management system improvement'
+        ],
+      },
+      {
+        img: '../img/adveits.jpg',
         title: 'Web developer',
         company: 'Adveits',
         period: '2025 -',
@@ -37,7 +47,7 @@ const translations = {
         img: '../img/freelancer.png',
         title: 'PHP developer',
         company: 'MB Pastebimas',
-        period: '2024 -',
+        period: '2024 - 2025',
         responsibilities: [
           'Laravel, Docker, Vue.js',
           'Developing websites, Order management system',
@@ -55,7 +65,7 @@ const translations = {
         ],
       },
       {
-        img: '../img/freelancer.png',
+        img: '../img/statybostonas.webp',
         title: 'Sales manager',
         company: 'Statybos tonas',
         period: '2023 - 2023',
@@ -82,7 +92,13 @@ const translations = {
     ],
     projects: [
       {
-        title: 'InvoicePing (ongoing)',
+        title: 'Kamivita',
+        url: 'https://play.google.com/store/apps/details?id=com.kamivita.app&pcampaignid=web_share',
+        description: 'Food rating app',
+        stack: 'React native, Expo, Mysql, Laravel, Filament, API, AI',
+      },
+      {
+        title: 'InvoicePing',
         url: 'https://www.invoiceping.com/',
         description: 'Invoicing App',
         stack: 'Laravel, Filament, Mysql, TailwindCSS',
@@ -106,7 +122,7 @@ const translations = {
     inCharacters: 'Per {count} simbolių..',
     relevantExperience: 'Aktuali patirtis',
     projectsGallery: 'Projektų galerija',
-    proficientWith: 'Puikiai dirbu su:',
+    proficientWith: 'Dirbu su:',
     portfolioTitle: 'Portfolio:',
     stackLabel: 'technologijos',
     showMore: 'Rodyti daugiau',
@@ -125,7 +141,17 @@ const translations = {
     hireMe: 'Samdyti',
     jobs: [
       {
-        img: '../img/freelancer.png',
+        img: '../img/lauksva.jpg',
+        title: 'Programuotojas',
+        company: 'Lauksva',
+        period: '2025 -',
+        responsibilities: [
+          'Laravel, PHP',
+          'Verslo valdymo sistemos tobulinimas'
+        ],
+      },
+      {
+        img: '../img/adveits.jpg',
         title: 'Web programuotojas',
         company: 'Adveits',
         period: '2025 -',
@@ -139,7 +165,7 @@ const translations = {
         img: '../img/freelancer.png',
         title: 'PHP programuotojas',
         company: 'MB Pastebimas',
-        period: '2024 -',
+        period: '2024 - 2025',
         responsibilities: [
           'Laravel, Docker, Vue.js',
           'Svetainių kūrimas, užsakymų valdymo sistema',
@@ -157,7 +183,7 @@ const translations = {
         ],
       },
       {
-        img: '../img/freelancer.png',
+        img: '../img/statybostonas.webp',
         title: 'Pardavimų vadybininkas',
         company: 'Statybos tonas',
         period: '2023 - 2023',
@@ -184,7 +210,13 @@ const translations = {
     ],
     projects: [
       {
-        title: 'InvoicePing (vyksta)',
+        title: 'Kamivita',
+        url: 'https://play.google.com/store/apps/details?id=com.kamivita.app&pcampaignid=web_share',
+        description: 'Maisto įvertinimo programa',
+        stack: 'React native, Expo, Mysql, Laravel, Filament, API, AI',
+      },
+      {
+        title: 'InvoicePing',
         url: 'https://www.invoiceping.com/',
         description: 'Sąskaitų siuntimo su AI programa',
         stack: 'Laravel, Filament, Mysql, TailwindCSS',

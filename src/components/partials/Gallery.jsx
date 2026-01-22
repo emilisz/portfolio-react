@@ -8,7 +8,7 @@ const Gallery = ({ translations, language }) => {
     <>
       <div className="flex flex-col md:flex-row gap-2 py-3 border-t border-slate-500 px-2 lg:pl-3 lg:pr-6 hover:bg-gray-800 hover:bg-blend-darken group">
         <div className="flex flex-row gap-2 lg:w-20">
-          <img className="rounded-full w-16 h-16 grayscale group-hover:grayscale-0" src="../img/freelancer.png" alt="" />
+          <img className="rounded-full w-16 h-16 grayscale group-hover:grayscale-0" src="../img/projects.png" alt="" />
           <div className="md:hidden mt-2">
             <div className=" flex flex-row ">
               <h3 className="font-bold">{translations[language].projectsLabel}</h3>
