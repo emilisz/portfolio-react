@@ -17,15 +17,16 @@ function App() {
     setIsOpen((prevState) => !prevState);
   };
   const [language, setLanguage] = useState("lt");
-  const [main, setMain] = useState(
-    translations["en"].mainText
-  );
+  const [main, setMain] = useState(translations["lt"].mainText);
+
+  React.useEffect(() => {
+    setMain(translations[language].mainText);
+  }, [language]);
 
   return (
     <div className="App max-w-7xl mx-auto lg:px-3">
-      <div className="absolute right-3 top-5 flex items-center justify-between pr-3 z-50">
-        
-      <div className="flex gap-1 mr-2">
+      <div className="absolute right-3 top-5 flex items-center justify-between pr-3 z-50 no-print">
+        <div className="flex gap-1 mr-2">
           <button
             className={`px-2 py-1 rounded text-xs font-bold border border-slate-500 transition ${language === "lt" ? "bg-sky-700 text-white" : "bg-slate-700 text-gray-300 hover:bg-sky-700"}`}
             onClick={() => setLanguage("lt")}
@@ -37,6 +38,15 @@ function App() {
             onClick={() => setLanguage("en")}
           >
             EN
+          </button>
+          <button
+            className="px-2 py-1 rounded text-xs font-bold border border-slate-500 bg-slate-700 text-gray-300 hover:bg-sky-700 transition flex items-center gap-1"
+            onClick={() => window.print()}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-3 h-3">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+            </svg>
+            {translations[language].downloadPDF}
           </button>
         </div>
         <button className="lg:hidden ml-2" onClick={toggleDrawer}>
@@ -63,7 +73,7 @@ function App() {
                 />
               </svg>
             </div>
-            <Hero main={translations[language].mainText} setMain={setMain} language={language} translations={translations} />
+            <Hero main={main} setMain={setMain} language={language} translations={translations} />
             <p className="py-3 border-y border-slate-500 text-lg font-bold px-2 lg:pl-3 lg:pr-6">{translations[language].relevantExperience}</p>
             <Experience translations={translations} language={language} />
             <p id="more" className="py-3 border-y border-slate-500 text-lg font-bold px-2 lg:pl-3 lg:pr-6">{translations[language].projectsGallery}</p>

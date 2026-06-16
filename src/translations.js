@@ -21,6 +21,7 @@ const translations = {
     websiteLabel: 'Website:',
     educationLabel: 'Education:',
     hireMe: 'Write email',
+    downloadPDF: 'Download PDF',
     jobs: [
       {
         img: '../img/lauksva.jpg',
@@ -118,7 +119,7 @@ const translations = {
     ],
   },
   lt: {
-    mainText: `Sveiki, aš Emilis — interneto svetainių kūrėjas 👨‍💻, ypatingą dėmesį skiriantis skaitmeninei rinkodarai 📈 ir SEO 🔍. Idėjas 💡 paverčiu aukštos kokybės, paieškai optimizuotomis svetainėmis 🌐, kurios duoda realių rezultatų. Mėgstu švarų kodą 🧼, vartotojo patirtį 🎯 ir matomumą 📊, visada ieškau iššūkių, kurie padeda tobulėti 🚀. Turiu patirties kuriant ir optimizuojant projektus nuo pradžios iki pabaigos 🛠️. Noriu bendradarbiauti su žmonėmis, kuriems svarbus mokymasis 📚, kūrybiškumas 🎨 ir našumas ⚡.`,
+    mainText: `Sveiki, aš Emilis — interneto svetainių ir programėlių kūrėjas 👨‍💻, ypatingą dėmesį skiriantis skaitmeninei rinkodarai 📈 ir SEO 🔍. Idėjas 💡 paverčiu aukštos kokybės, paieškai optimizuotomis svetainėmis 🌐, kurios duoda realių rezultatų. Mėgstu švarų kodą 🧼, vartotojo patirtį 🎯 ir matomumą 📊, visada ieškau iššūkių, kurie padeda tobulėti 🚀. Turiu patirties kuriant ir optimizuojant projektus nuo pradžios iki pabaigos 🛠️. Noriu bendradarbiauti su žmonėmis, kuriems svarbus mokymasis 📚, kūrybiškumas 🎨 ir našumas ⚡.`,
     inCharacters: 'Per {count} simbolių..',
     relevantExperience: 'Aktuali patirtis',
     projectsGallery: 'Projektų galerija',
@@ -139,6 +140,7 @@ const translations = {
     websiteLabel: 'Svetainė:',
     educationLabel: 'Išsilavinimas:',
     hireMe: 'Samdyti',
+    downloadPDF: 'Atsisiųsti PDF',
     jobs: [
       {
         img: '../img/lauksva.jpg',

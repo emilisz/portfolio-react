@@ -3,10 +3,17 @@ import HeroButtons from "./partials/HeroButtons";
 
 const Hero = ({ main, setMain, language, translations }) => {
   const [showToast, setShowToast] = useState(false);
+  const pRef = React.useRef(null);
 
-  const mainText = translations[language].mainText;
   const everyone = translations[language].everyone;
   const everyoneCanReply = translations[language].everyoneCanReply;
+
+  // Update the content only when the language changes or on mount
+  React.useEffect(() => {
+    if (pRef.current) {
+      pRef.current.textContent = main;
+    }
+  }, [language]);
 
   return (
     <div className="flex flex-col md:flex-row gap-2 px-2 lg:pl-3 lg:pr-6">
@@ -39,7 +46,12 @@ const Hero = ({ main, setMain, language, translations }) => {
           </svg>
         </div>
         <div className="text-lg p-1">
-          <p contentEditable={true} suppressContentEditableWarning={true}>{mainText}</p>
+          <p
+            ref={pRef}
+            contentEditable={true}
+            suppressContentEditableWarning={true}
+            onInput={(e) => setMain(e.currentTarget.textContent)}
+          />
           <p className="text-sky-500 pt-2 text-sm select-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +93,7 @@ const Hero = ({ main, setMain, language, translations }) => {
         </div>
         <div className="ml-3 text-sm font-normal">
             <div className="text-sm font-semibold text-gray-900 dark:text-white">Emilis Čiurlionis</div>
-            <div className="text-sm font-normal">Thanks for encouragement! It means a lot for me :)</div> 
+            <div className="text-sm font-normal z-50">Thanks for encouragement! It means a lot for me :)</div> 
             <span className="text-xs font-medium text-blue-600 dark:text-blue-500">a few seconds ago</span>   
         </div>
     </div>
