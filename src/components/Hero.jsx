@@ -13,7 +13,7 @@ const Hero = ({ main, setMain, language, translations }) => {
     if (pRef.current) {
       pRef.current.textContent = main;
     }
-  }, [language]);
+  }, [language, main]);
 
   return (
     <div className="flex flex-col md:flex-row gap-2 px-2 lg:pl-3 lg:pr-6">
