@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    mainText: `Hi, I'm Emilis — a web developer 👨‍💻 with a strong focus on digital marketing 📈 and SEO 🔍. I turn ideas 💡 into high-performing, search-optimized websites 🌐 that deliver real results. Passionate about clean code 🧼, user experience 🎯, and visibility 📊, I'm always looking for challenges that help me grow 🚀. With proven experience in web development and SEO, I can plan, build, and optimize full-scale web projects from scratch 🛠️. I'm eager to collaborate with like-minded individuals who value learning 📚, creativity 🎨, and performance ⚡.`,
+    mainText: `Hi, I'm Emilis — a web developer 👨‍💻 with a strong focus on digital marketing and SEO. I turn ideas into high-performing, search-optimized websites that deliver real results. Passionate about clean code, user experience, and visibility, I'm always looking for challenges that help me grow 🚀. With proven experience in web development and SEO, I can plan, build, and optimize full-scale web projects from scratch. I'm eager to collaborate with like-minded individuals who value learning, creativity, and performance.`,
     inCharacters: 'In {count} characters..',
     relevantExperience: 'Relevant experience',
     projectsGallery: 'Projects gallery',
@@ -27,7 +27,7 @@ const translations = {
         img: '../img/lauksva.jpg',
         title: 'Developer',
         company: 'Lauksva',
-        period: '2025 -',
+        period: '2025 - 2025',
         responsibilities: [
           'Laravel, PHP',
           'Business management system improvement'
@@ -93,6 +93,12 @@ const translations = {
     ],
     projects: [
       {
+        title: 'PerkuSvente',
+        url: 'https://perkusvente.lt',
+        description: 'Ad listing website',
+        stack: 'Mysql, Laravel, Filament, TailwindCSS',
+      },
+      {
         title: 'Kamivita',
         url: 'https://play.google.com/store/apps/details?id=com.kamivita.app&pcampaignid=web_share',
         description: 'Food rating app',
@@ -119,7 +125,10 @@ const translations = {
     ],
   },
   lt: {
-    mainText: `Sveiki, aš Emilis — interneto svetainių ir programėlių kūrėjas 👨‍💻, ypatingą dėmesį skiriantis skaitmeninei rinkodarai 📈 ir SEO 🔍. Idėjas 💡 paverčiu aukštos kokybės, paieškai optimizuotomis svetainėmis 🌐, kurios duoda realių rezultatų. Mėgstu švarų kodą 🧼, vartotojo patirtį 🎯 ir matomumą 📊, visada ieškau iššūkių, kurie padeda tobulėti 🚀. Turiu patirties kuriant ir optimizuojant projektus nuo pradžios iki pabaigos 🛠️. Noriu bendradarbiauti su žmonėmis, kuriems svarbus mokymasis 📚, kūrybiškumas 🎨 ir našumas ⚡.`,
+    mainText: `Sveiki, aš Emilis – Full Stack programuotojas, specializuojuosi Laravel ir WordPress sprendimuose. Kuriu ir vystau interneto svetaines, elektroninės komercijos projektus, verslo sistemas bei API integracijas, dirbdamas tiek su backend, tiek su frontend dalimi. 
+Backend srityje kuriu Laravel aplikacijas, REST API, duomenų bazių architektūrą, automatizacijas ir integracijas su trečiųjų šalių sistemomis. Frontend srityje dirbu su HTML, CSS, JavaScript bei moderniais UI sprendimais, siekdamas užtikrinti greitą, patogią ir profesionalią vartotojo patirtį
+Taip pat turiu stiprų supratimą apie SEO, svetainių našumo optimizavimą ir skaitmeninę rinkodarą, todėl į projektus žiūriu ne tik kaip programuotojas, bet ir kaip žmogus, siekiantis padėti verslui pasiekti geresnius rezultatus internete. 
+Vertinu kokybišką kodą, aiškią architektūrą ir nuolatinį tobulėjimą. Mane motyvuoja galimybė spręsti sudėtingus uždavinius, mokytis naujų technologijų ir kurti sprendimus, kurie generuoja realią vertę vartotojams bei verslui.`,
     inCharacters: 'Per {count} simbolių..',
     relevantExperience: 'Aktuali patirtis',
     projectsGallery: 'Projektų galerija',
@@ -211,6 +220,12 @@ const translations = {
       },
     ],
     projects: [
+      {
+        title: 'PerkuSvente',
+        url: 'https://perkusvente.lt',
+        description: 'Skelbimų talpinimo svetainė',
+        stack: 'Mysql, Laravel, Filament, TailwindCSS',
+      },
       {
         title: 'Kamivita',
         url: 'https://play.google.com/store/apps/details?id=com.kamivita.app&pcampaignid=web_share',

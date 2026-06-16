@@ -43,15 +43,37 @@ function App() {
             className="px-2 py-1 rounded text-xs font-bold border border-slate-500 bg-slate-700 text-gray-300 hover:bg-sky-700 transition flex items-center gap-1"
             onClick={() => window.print()}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-3 h-3">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-3 h-3"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+              />
             </svg>
             {translations[language].downloadPDF}
           </button>
         </div>
         <button className="lg:hidden ml-2" onClick={toggleDrawer}>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
           </svg>
         </button>
       </div>
@@ -64,8 +86,20 @@ function App() {
         <div className="lg:col-span-2 lg:border-x lg:border-slate-500 ">
           <div className="flex flex-col text-left">
             <div className="flex justify-between px-2 lg:pl-3 lg:pr-6 my-3">
-              <p className="text-lg font-bold">{translations[language].inCharacters.replace('{count}', main.length)}</p>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+              <p className="text-lg font-bold">
+                {translations[language].inCharacters.replace(
+                  "{count}",
+                  main.length,
+                )}
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -73,10 +107,22 @@ function App() {
                 />
               </svg>
             </div>
-            <Hero main={main} setMain={setMain} language={language} translations={translations} />
-            <p className="py-3 border-y border-slate-500 text-lg font-bold px-2 lg:pl-3 lg:pr-6">{translations[language].relevantExperience}</p>
+            <Hero
+              main={main}
+              setMain={setMain}
+              language={language}
+              translations={translations}
+            />
+            <p className="py-3 border-y border-slate-500 text-lg font-bold px-2 lg:pl-3 lg:pr-6">
+              {translations[language].relevantExperience}
+            </p>
             <Experience translations={translations} language={language} />
-            <p id="more" className="py-3 border-y border-slate-500 text-lg font-bold px-2 lg:pl-3 lg:pr-6">{translations[language].projectsGallery}</p>
+            <p
+              id="more"
+              className="py-3 border-y border-slate-500 text-lg font-bold px-2 lg:pl-3 lg:pr-6"
+            >
+              {translations[language].projectsGallery}
+            </p>
             <Gallery translations={translations} language={language} />
           </div>
         </div>
@@ -93,7 +139,13 @@ function App() {
         overlayOpacity="0.4"
         size="80vw"
         zIndex="100"
-        style={{ backgroundColor: "#15202b", paddingTop: "15px", paddingLeft: "5px", paddingBottom: "15px", }}>
+        style={{
+          backgroundColor: "#15202b",
+          paddingTop: "15px",
+          paddingLeft: "5px",
+          paddingBottom: "15px",
+        }}
+      >
         <Contacts translations={translations} language={language} />
       </Drawer>
     </div>
